@@ -7,7 +7,7 @@ clc
 BW=zeros(512);
 BW(256,:)=1.0;%BW should be the binary edge map of the image
 BW=imread('P1040833.png');
-BW=double(BW)/255.0;
+BW=double(BW)/255.0; % binary edge maps and with the value of 0 and 1
 tic
 W=10.0; %radius of the POE kernel
 P=16.0; % number of orientations in POE
