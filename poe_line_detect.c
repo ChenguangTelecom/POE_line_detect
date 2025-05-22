@@ -220,8 +220,8 @@ static int region_grow(point_list_ptr preg, double reg_angle, image_double_ptr o
     {
       curr_x=(pnode->item).x;
       curr_y=(pnode->item).y;
-      for (i=-2;i<3;i++)
-	for (j=-2;j<3;j++)
+      for (i=-1;i<2;i++)
+	for (j=-1;j<2;j++)
 	  {
 	    test_x=min(max(curr_x+i,0),X-1);
 	    test_y=min(max(curr_y+j,0),Y-1);
